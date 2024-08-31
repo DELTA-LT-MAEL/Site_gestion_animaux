@@ -123,7 +123,7 @@ class View {
         $this->error = $animalBuilder->getError();
         $form .= '<label for="' . AnimalBuilder::NAME_REF . '">Nom:</label>';
         if (empty($animalBuilder->getData())) {
-            $form .= '<input type="text" name="' . AnimalBuilder::NAME_REF . '" id="' . AnimalBuilder::NAME_REF . '" "><br>';
+            $form .= '<input type="text" name="' . AnimalBuilder::NAME_REF . '" id="' . AnimalBuilder::NAME_REF . '"><br>';
         } else {
             $form .= '<input type="text" name="' . AnimalBuilder::NAME_REF . '" id="' . AnimalBuilder::NAME_REF . '" value="' . $animalBuilder->getData()[AnimalBuilder::NAME_REF] . '"><br>';
         }
